@@ -1,0 +1,150 @@
+  body{
+    background-color: #f8f9fa!important;
+    }
+
+  .bg-light {
+    background-color: #fff !important;
+    }
+
+  .div-inline{
+       position:relative; 
+       float: left;   
+   }
+   .usuario{
+    color: #4dd0e1;
+    font-weight: 500;
+    padding-left: 3px;
+   }
+
+   .btn-sair{
+    margin-top: 20px;
+    width: 70px;
+    margin-bottom: 50px;
+   }
+
+   .conteudo-lateral{
+    margin-left: 30px;
+    padding-left: 5px;
+   }
+   .logo{
+    margin-bottom: 20px;
+   }
+
+   .btn-voltar{
+    background-color: #4dd0e1;
+    border: 0px;
+   }
+   .btn-voltar:hover{
+     background-color: #00bcd4;
+   }
+
+   .seta{
+    background-color: #333;
+    color: white;
+    font-weight: 800;
+   }
+
+   .pagina{
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;   
+   }
+
+   .btn-pesquisar{
+    background-color: #4dd0e1;
+    border: 0;
+   }
+   .btn-pesquisar:hover{
+    background-color: #00bcd4;
+   }
+
+   .visualizacao{
+    color: #4dd0e1;    
+    font-weight: 500;
+   }
+
+   .visualizacao:hover{
+    color: #00bcd4;
+   }
+
+   .pesquisar{
+    margin-bottom: 20px;
+   }
+
+   .logo_medilab {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;  
+   text-align: left;
+   padding-left: 40px;
+    }
+
+  .titulo{
+    margin-bottom: 25px;
+  }
+
+  th{
+    font-size: 12px;
+    color: #888;
+    background-color: #fff;
+    border: 0px !important;
+  }
+
+  td{
+    font-size: 12px;
+    color: #666;    
+  }
+
+ .filtro{
+  font-size: 12px;
+  color: #666;
+  background-color: #fff;
+  border: 0;
+ }
+
+ .table-hover tbody tr:hover td {
+    background: #b9f6ca;
+}
+
+.menu-lateral{
+  margin-top: 100px;
+  
+}
+
+.menu{
+  color: #00bcd4;   
+  font-weight: 500;
+  font-size: 14px; 
+}
+
+.menu:hover{
+  font-size: 15px;
+   color: #444;
+    text-decoration: none;
+   }
+
+.nav-campus {
+  border: 1px solid #dcd4e5;
+  padding: 10px;
+  margin-bottom: 5px;
+
+}
+
+.nav-campus a {
+  margin: 6px 0;
+  display: inline-block;
+  background: #4dd0e1;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+  
+.nav-campus a:hover {
+  background: #00bcd4;
+}
