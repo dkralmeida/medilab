@@ -7,8 +7,7 @@
 	};
 
 	spl_autoload_register($autoload);
-
-	//define('INCLUDE_PATH','http://donni.tech/medilab/');
+	
 	define('INCLUDE_PATH','http://localhost/medilab/');		
 
 	//Conectar com banco de dados!

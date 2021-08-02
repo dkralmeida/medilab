@@ -22,8 +22,8 @@
 
     <select class="form-control form-control-sm filtro" id="modalidade" name="modalidade">
     <option value="0">Modalidade</option>
-    <option value="1">RM</option>     
-    <option value="2">XX</option>    
+    <option value="RM">RM</option>     
+    <option value="XX">XX</option>    
     </select>
     </div>
 

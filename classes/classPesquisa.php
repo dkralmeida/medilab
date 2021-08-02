@@ -9,30 +9,27 @@ class ClassPesquisa extends ClassConexao{
         $data           =   $data; 
         $modalidade     =   $modalidade; 
         $filtrogeral    =   $filtrogeral; 
-        $buscaLike      =   '%'.$busca.'%'; //pega valores aproximados
+        $buscaLike      =   '%'.$busca.'%'; //pega valores aproximados        
 
         //busca por data
-        if($data != '' && $modalidade == '0' ){ 
+       if($data != ''){ 
             $crud = $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE data = '$data' ");}
 
         //busca por modalidade
-        else if($data == '' && $modalidade != '0' ){ 
-            $crud = $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE modalidade = '$modalidade' ");}
+        else if($modalidade != '0' ){ 
+            $crud = $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE modalidade = '$modalidade' ");}       
 
-        //busca por data e modalidade
         else if($data != '' && $modalidade != '0' ){ 
-            $crud = $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE data = '$data' AND modalidade = '$modalidade' ");}
-
-
-        else if($filtrogeral == '1'){
-            $modalidade = '0';
-            $data = '';
-            $crud =   $this->conectaDB()->prepare("SELECT * FROM tb_pacientes" );
-       }
-        //busca tudo            
-        else{
-            $crud =   $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE nome like :nome");         
+            $crud = $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE data = '$data' AND modalidade = '$modalidade' ");           
         }
+        //busca por filtro geral
+        else if($filtrogeral != '1'){//todos            
+            $crud =   $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE modalidade = '' AND modalidade = '0'");
+        }
+        //busca por nome
+        else{            
+            $crud =   $this->conectaDB()->prepare("SELECT * FROM tb_pacientes WHERE nome like :nome");         
+       }
 
 
         $crud       ->  bindValue(':nome',$buscaLike);//bindValue - pode ser referência ou um valor direto
